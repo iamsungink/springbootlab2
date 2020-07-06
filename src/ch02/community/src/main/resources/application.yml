@@ -1,9 +1,3 @@
-fruit:
-  list:
-    - name: banana
-      color: yellow
-    - name: apple
-      color: red
 #@Value test-----------------------
 #property:
 #    test:
@@ -12,3 +6,19 @@ fruit:
 #propertyTestList: a,b,c
 #-----------------------------------
 #@ConfigurationProperties test------
+fruit:
+  list:
+      - name: banana
+        color: yellow
+      - name: apple
+        color: red
+      - name: water melon
+        color: green
+# H2 메모리 DB를 사용하기 위한 설정
+datasource:
+  url: jdbc:h2:mem:testdb
+
+spring:
+  h2:
+    console:
+      enabled: true
